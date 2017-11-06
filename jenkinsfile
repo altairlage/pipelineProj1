@@ -14,8 +14,28 @@ node {
             // }
         }
 
-        stage('just echo') {
+         stage('build gradle 1') {
+             
+            if(isUnix()){
+                sh 'cd sapleGradleJar'
+                sh 'gradle build --info'
+
+                sh 'cd ../sampleGradleJar2'
+                sh 'gradle build --info'
+            }
+            else{
+                bat 'cd sapleGradleJar'
+                bat 'gradle build --info'
+
+                bat 'cd ..\sampleGradleJar2'
+                bat 'gradle build --info'
+            }
+         }
+
+
+        stage('Archive artifacts') {
             echo 'echo de teste'
+            // archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
         }
     // }
     
