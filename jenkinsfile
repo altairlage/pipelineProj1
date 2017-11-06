@@ -8,6 +8,10 @@ node {
                 git url: 'https://github.com/altairlage/sampleGradleJar2.git'
             // }
         }
+
+        stage('just echo') {
+            echo 'echo de teste'
+        }
     }
     
 
