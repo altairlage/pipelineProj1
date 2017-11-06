@@ -3,13 +3,13 @@ node {
     // stages{
         stage('Clone sources') {
             // steps{
-                dir('sapleGradleJar') {
+                // dir('sapleGradleJar') {
                     git url: 'https://github.com/altairlage/sapleGradleJar.git'
-                }
+                // }
 
-                dir('sampleGradleJar2') {
+                // dir('sampleGradleJar2') {
                     git url: 'https://github.com/altairlage/sampleGradleJar2.git'
-                }
+                // }
                 
             // }
         }
