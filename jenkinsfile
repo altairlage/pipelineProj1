@@ -2,11 +2,11 @@ node {
     // checkout of the projects
     stages{
         stage('Clone sources') {
-            steps{
+            // steps{
                 git url: 'https://github.com/altairlage/sapleGradleJar.git'
 
                 git url: 'https://github.com/altairlage/sampleGradleJar2.git'
-            }
+            // }
         }
     }
     
