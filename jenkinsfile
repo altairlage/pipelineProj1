@@ -1,8 +1,13 @@
 node {
     // checkout of the projects
     stage('Clone sources') {
-        git url: 'https://github.com/altairlage/sapleGradleJar.git'
-        git url: 'https://github.com/altairlage/sampleGradleJar2.git'
+        step{
+            git url: 'https://github.com/altairlage/sapleGradleJar.git'
+        }
+
+        step{
+            git url: 'https://github.com/altairlage/sampleGradleJar2.git'
+        }
     }
 
     // stage('Artifactory configuration') {
