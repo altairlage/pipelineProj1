@@ -1,6 +1,6 @@
 node {
     // checkout of the projects
-    stages{
+    // stages{
         stage('Clone sources') {
             // steps{
                 git url: 'https://github.com/altairlage/sapleGradleJar.git'
@@ -12,7 +12,7 @@ node {
         stage('just echo') {
             echo 'echo de teste'
         }
-    }
+    // }
     
 
     // stage('Artifactory configuration') {
