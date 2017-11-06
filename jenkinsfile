@@ -1,7 +1,7 @@
 node {
     // checkout of the projects
     stage('Clone sources') {
-        git url: 'http://10.25.26.25/backend/ws-client-test.git'
+        git url: 'https://github.com/altairlage/sapleGradleJar.git'
     }
 
     // stage('Artifactory configuration') {
