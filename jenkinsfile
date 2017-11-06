@@ -27,7 +27,7 @@ node {
                 bat 'cd sapleGradleJar'
                 bat 'gradle build --info'
 
-                bat 'cd ..\sampleGradleJar2'
+                bat 'cd ..\\sampleGradleJar2'
                 bat 'gradle build --info'
             }
          }
